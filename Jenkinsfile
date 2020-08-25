@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('code build') {
       steps {
-        sh 'mvn package'
+        sh 'mvn package -f pom.xml'
       }
     }
 
